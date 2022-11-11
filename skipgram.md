@@ -146,4 +146,9 @@ Sampai disini saya ragu, dan saya menemukan dua ide:
 
 - Perhitungannya bakal langsung aja, $\hat{Y} = \text{Softmax}(X \times C\times W)$, 
 
-Saya merasa ide kedua sama saja dengan ide pertama, dan harusnya lebih cepat, karena pada dasarnya fungsi transformasi $\text{Average}(M)$ pada matriks $M$ berukuran $m \times n$ bisa dinyatakan sebagai perkalian matriks $A \times M$ dengan $A = [\frac{}{}]$ 
+---
+
+Saya merasa ide kedua sama saja dengan ide pertama, karena pada dasarnya fungsi transformasi $\text{Average}(M)$ pada matriks $M$ berukuran $m \times n$ bisa dinyatakan sebagai perkalian matriks $A \times M$ dengan $A$ merupakan vektor baris berukuran $m$ dengan entri setiap elemennya $\frac{1}{m}$. Jadi sebenarnya bisa kita lakukan dengan batch. Mohon koreksi saya bila saya salah :pray:, Pak.
+
+Saya akhirnya coba menerapkan ide kedua.
+
